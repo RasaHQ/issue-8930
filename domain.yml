@@ -1,0 +1,39 @@
+version: "2.0"
+
+intents:
+  - prénom
+  - nom
+  - age_personne
+  - adresse_personne
+  - travail
+  - numéro_tel
+
+entities:
+  - prenom
+  - nom_famille
+  - age
+  - adresse
+  - commune
+  - profession
+  - numero_tel
+
+responses:
+  utter_greet:
+  - text: "Bonjour ? Comment allez-vous ?"
+
+  utter_question:
+  - text: "Vous résidez bien en France ?"
+
+  utter_ok:
+    - text: "Très bien, je note ça."
+
+  utter_sorry:
+    - text: "Désolé, j'ai du mal comprendre."
+
+  utter_goodbye:
+  - text: "Bonne journee"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

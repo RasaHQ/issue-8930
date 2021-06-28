@@ -1,0 +1,154 @@
+version: "2.0"
+nlu:
+- intent: prénom
+  examples: |
+    - je m'appelle [Philippe](prenom)
+    - je suis [Catherine](prenom)
+    - mon prénom est [Jean](prenom)
+    - je me prénomme [Sylvie](prenom)
+    - on me surnomme [Alain](prenom)
+    - c'est [Patrick](prenom)
+    - [Christine](prenom)
+    - [Marie](prenom)
+    - [Brigitte](prenom)
+    - [Eric](prenom)
+    - [Didier](prenom)
+    - je m'appelle [François](prenom)
+    - mon prénom est [Carole](prenom)
+    - je m'appelle [Henri](prenom)
+    - [Fabrice](prenom)
+    - C'est [Lionel](prenom)
+    - je suis [Antoine](prenom)
+    - mon prénom est [Valérie](prenom)
+    - [Sylvain](prenom)
+    - [Gisèle](prenom)
+    - [Paul](prenom)
+    - [Yannick](prenom)
+    - on m'appelle [Liliane](prenom)
+    - moi c'est [Gisèle](prenom)
+    - [Maurice](prenom)
+
+- intent: nom
+  examples: |
+    - mon nom de famille est [Martin](nom_famille)
+    - c'est [Durand](nom_famille)
+    - mon nom d'usage est [Dubois](nom_famille)
+    - je m'apelle [Alain](prenom) [Moreau](nom_famille)
+    - je suis [Julien](prenom) [Lefèvre](nom_famille)
+    - [Leroy](nom_famille)
+    - [Roux](nom_famille)
+    - [Dupont](nom_famille)
+    - [Rousseau](nom_famille)
+    - je m'appelle [Françoise](prenom) [Boyer](nom_famille)
+    - mon nom de famille est [Garnier](nom_famille)
+    - [Legrand](nom_famille)
+    - mon nom est [Mercier](nom_famille)
+    - c'est [Blanc](nom_famille)
+    - [Chevalier](nom_famille)
+    - c'est [Perrin](nom_famille)
+    - mon nom de famille est [Clement](nom_famille)
+    - [Robin](nom_famille)
+    - [Roussel](nom_famille)
+    - c'est [Duval](nom_famille)
+    - mon nom est [Lemaire](nom_famille)
+    - [Noel](nom_famille)
+    - [Meunier](nom_famille)
+    - [Brunet](nom_famille)
+    - [Roche](nom_famille)
+
+- intent: age_personne
+  examples: |
+    - j'ai [75](age) ans
+    - je suis âgé de [80](age) ans
+    - j'ai [90](age) ans
+    - j'ai [86](age) ans
+    - j'ai [71](age) ans
+    - je fête bientôt mes [88](age) ans
+    - j'ai dernièrement fêté mes [78](age) ans
+    - je suis âgée de [92](age) ans
+    - j'ai [73](age) ans
+    - je viens de fêter mes [74](age) ans
+    - [81](age) ans
+    - [76](age) ans
+    - [85](age) ans
+    - [77](age) ans
+    - [79](age) ans
+    - j'ai [80](age) ans
+    - je fête bientôt mes [82](age) ans
+    - [86](age) ans
+    - [87](age) ans
+    - [89](age) ans
+ 
+- intent: travail
+  examples: |
+    - je suis [ingénieur](profession)
+    - je travaille en tant que [architecte](profession)
+    - je suis [professeur](profession)
+    - je suis [plombier](profession)
+    - je travaille comme [mécanicienne](profession)
+    - je suis [secrétaire](profession)
+    - je suis [infirmier](profession)
+    - je suis [médecin](profession)
+    - je travaille en tant que [styliste](profession)
+    - je suis [avocat](profession)
+    - je suis [policier](profession)
+    - je travaille comme [agronome](profession)
+    - je suis [ambulancier](profession)
+    - je travaille en tant que [archiviste](profession)
+    - je suis [comptable](profession)
+    - je suis [cuisiner](profession)
+    - je travaille dans le batiment je suis [charpentier](profession)
+    - je suis [fleuriste](profession)
+    - je travaille comme [jardinier](profession)
+    - je travaille en tant que [juge](profession)
+    - je suis [opticien](profession)
+    - je travaille comme [psychologue](profession)
+    - je suis [récéptionniste](profession)
+    - je travaille comme [technicien](profession)
+    - je suis [huissier](profession)
+
+- intent: adresse_personne
+  examples: |
+    - j'habite au [85 rue Marat](adresse) à [Ivry-Sur-Seine](commune)
+    - mon adresse est [1 place Stanislas](adresse) [Cannes](commune)
+    - c'est le [9 rue de la fraternité](adresse) [Chalons En Champagne](commune)
+    - [33 rue Raymond Guyot](adresse) [Reims](commune)
+    - [2 impasse des Ecoles](adresse) [Bazougers](commune)
+    - [18 chemin de Rocques](adresse) [Lisieux](commune)
+    - [33 boulevard Georges Pompidou](adresse) [Caen](commune)
+    - [57 avenue de la république](adresse) [Aurillac](commune)
+    - [4 avenue André Malraux](adresse) [Paris](commune)
+    - c'est [36 chemin des Baumillons](adresse) [Marseille](commune)
+    - mon adresse est [17 rue Massey](adresse) [Tarbes](commune)
+    - c'est [16 rue Valette](adresse) [Perpignan](commune)
+    - [15 avenue des Magasin](adresse) [Strasbourg](commune)
+    - je suis au [17 boulevard des Jardin](adresse) [Toulouse](commune)
+    - je réside à [25 rue des Tuilliers](adresse) [Lyon](commune)
+    - [4 impasse du Cheval Blanc](adresse) [Chartres](commune)
+    - [17 place de la Tourbie](adresse) [Le Mans](commune)
+    - j'habite au [30 avenue Louis Veuillot](adresse) [Brest](commune)
+    - je vis au [17 rue Bouret](adresse) [Paris](commune)
+    - je suis au [18 bis rue de l'Abbé](adresse) [Nimes](commune)
+
+- intent: numéro_tel
+  examples: |
+    - mon numéro de téléphone est [0781542259](numero_tel)
+    - mon numéro de tel est [0665942250](numero_tel)
+    - c'est [0680050256](numero_tel)
+    - je suis joignable au [0650234687](numero_tel)
+    - vous pouvez m'appeler au [0762457699](numero_tel)
+    - [0781679855](numero_tel)
+    - si je me souviens bien c'est le [0665280227](numero_tel)
+    - je crois que c'est le [0761028814](numero_tel)
+    - si je ne me trompe pas c'est le [0665984522](numero_tel)
+    - je l'ai enregistré sur mon tel c'est le [0782658972](numero_tel)
+    - [0782658972](numero_tel)
+    - [0756983421](numero_tel)
+    - alors c'est [0660342156](numero_tel)
+    - mon numéro est le [0660765389](numero_tel)
+    - c'est le [0665231243](numero_tel)
+    - vous pouvez me joindre au [0786453256](numero_tel)
+    - [0785649835](numero_tel)
+    - c'est [0665654327](numero_tel)
+    - mon numéro est [0669280227](numero_tel)
+    - je suis joignable au [0754234576](numero_tel)
